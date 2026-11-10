@@ -69,9 +69,11 @@ As imagens abaixo apresentam as principais etapas da primeira versão da automa�
 3. Identificação de possíveis solicitações de faturamento.
 4. Envio da notificação pelo Microsoft Teams.
 5. 
-[Fluxo de monitoramento de solicitações de faturamento](images/identificacao_empresas.png)
-[Fluxo de monitoramento de solicitações de faturamento](images/validacao_solicitacao.png)
-[Fluxo de monitoramento de solicitações de faturamento](images/aviso_teams.png)
+![Fluxo de monitoramento de solicitações de faturamento](images/identificacao_empresas.png)
+
+![Fluxo de monitoramento de solicitações de faturamento](images/validacao_solicitacao.png)
+
+![Fluxo de monitoramento de solicitações de faturamento](images/aviso_teams.png)
 
 
 ## Funcionamento
