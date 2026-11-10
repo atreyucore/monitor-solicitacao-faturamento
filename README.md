@@ -57,6 +57,7 @@ Quando um novo email chega (V3)
 ```
 A automação é iniciada sempre que uma nova mensagem é recebida na pasta monitorada.
 A primeira versão não depende de uma rotina horária. Cada novo e-mail pode ser analisado assim que o gatilho é acionado.
+
 2. Identificação da empresa
 A primeira condição verifica o assunto e/ou o corpo da mensagem em busca das empresas configuradas.
 Neste repositório, os nomes reais foram substituídos por:
@@ -75,6 +76,7 @@ OU
 Corpo contém EMPRESA_B
 ```
 Se nenhuma empresa monitorada for identificada, nenhuma notificação é enviada.
+
 3. Identificação de possível solicitação
 Caso a primeira condição seja verdadeira, uma segunda condição procura indicadores associados a solicitações de faturamento.
 Exemplos utilizados na primeira versão:
@@ -87,6 +89,7 @@ emissão
 emitir
 ```
 Essa validação evita que qualquer mensagem contendo apenas o nome da empresa gere automaticamente um alerta.
+
 4. Notificação no Microsoft Teams
 Quando as duas condições são satisfeitas, o fluxo envia uma notificação ao responsável pelo processo.
 Exemplo sanitizado:
