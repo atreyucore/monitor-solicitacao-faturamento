@@ -104,7 +104,9 @@ Recebido em: [data/hora]
 Verifique o e-mail para confirmar a solicitação.
 ```
 Os dados entre colchetes podem ser preenchidos com conteúdo dinâmico fornecido pelo gatilho do Outlook.
+
 Regras de negócio
+
 Regra 1: empresa monitorada
 A mensagem deve mencionar pelo menos uma empresa cadastrada no fluxo.
 ```text
@@ -112,6 +114,7 @@ EMPRESA_A OU EMPRESA_B
 ```
 Regra 2: indício de solicitação
 Além da empresa, a mensagem deve atender à condição configurada para identificar possível intenção de faturamento.
+
 Regra 3: notificação
 A notificação no Teams somente deve ser executada no ramo Sim da segunda condição.
 ```text
@@ -123,8 +126,10 @@ Possível solicitação = SIM
 Enviar alerta
 ```
 Essa estrutura é importante para impedir que a ação do Teams seja executada independentemente do resultado da segunda condição.
+
 Cenários de teste
 Os testes abaixo utilizam dados fictícios.
+
 Teste 1: solicitação válida
 Entrada
 ```text
@@ -161,6 +166,7 @@ Possível solicitação: NÃO
 Alerta no Teams: NÃO
 ```
 Esse cenário é especialmente importante porque valida que mencionar uma empresa monitorada não é suficiente para gerar uma notificação.
+
 Teste 4: solicitação de outra empresa
 Entrada
 ```text
